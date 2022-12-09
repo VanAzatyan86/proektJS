@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header {
+    width: 1300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #17233A;
+    position: fixed;
+    text-align: center;
+    z-index: 100;
+
+    .logo {
+        padding: 15px 60px;
+        display: flex;
+        font-size: 35px;
+        font-weight: 800;
+        font-family: 'Montserrat', sans-serif;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        em {
+            color: #F5A425;
+            font-style: normal;
+            margin-right: 10px;
+        }
+    }
+
+    .myHeaderButton {
+        ul {
+            padding: 25px 60px;
+            width: 600px;
+            display: flex;
+            justify-content: space-between;
+
+            >li {
+                padding: 7px 5px;
+                width: 70px;
+                list-style-type: none;
+                &:hover {
+                    border: 2px solid #F5A425;
+                    .newDiv {
+                        .newUl{
+                            li{
+                                display: block;
+                                    &:hover{
+                                        border: none;
+                                        a{
+                                            color: #f5a425;
+                                        }
+                                       
+                                    }
+                                   
+                                
+                            }
+
+                        } 
+                    }
+                }
+                a {
+                    color: white;
+                    font-size: 13px;
+                    font-weight: bold;
+                    text-decoration: none;
+
+                }
+            }
+
+        }
+    }
+}
+.newDiv {
+    position: absolute;
+    top: 50px;
+    left: 740px;
+    .newUl {
+        display: flex;
+        flex-direction: column;
+        li {
+            width: 100px;
+            border: none;
+            padding: 20px;
+            background: #17233A;
+            border-bottom: 1px solid rgb(21, 20, 20);
+            display: none;
+        }
+
+        a {
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+}
+
+.myvideo {
+    width: 100%;
+    position: relative;
+
+    video {
+        width: 100%;
+    }
+}
+
+.myDivOnVideo {
+    width: 100%;
+    position: absolute;
+    background-color: rgba(22, 34, 57, 0.85);
+    top: 0;
+    left: 0;
+    bottom: -100px;
+}
+
+.myTextOnVideo {
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    text-align: center;
+
+    p {
+        font-size: 20px;
+        font-weight: 700;
+        color: rgb(249, 230, 230);
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 64px;
+        color: white;
+        font-weight: 800;
+        margin-bottom: 30px;
+
+        em {
+            font-style: normal;
+            color: #f5a425;
+        }
+    }
+
+    button {
+        background: #F5A425;
+        border: none;
+        color: wheat;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+}
+.main {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 27%);
+    justify-content: center;
+    gap: 30px;
+    top: 560px;
+    padding-bottom: 100px;
+    color: white;
+
+    .myHiddenDiv {
+        background: #0C1228;
+        padding: 10px 20px;
+
+        &:hover {
+            background-color: #f5a425;
+            margin-top: -180px;
+            transition: 0.5s;
+        }
+
+        .myImg {
+            display: flex;
+            padding: 25px 20px;
+
+            img {
+                width: 30px;
+                padding-right: 5px;
+            }
+        }
+    }
+
+    .hiddenText {
+        padding-top: 20px;
+
+        p {
+            font-size: 13px;
+            line-height: 22px;
+            padding: 0 25px;
+        }
+
+        a {
+            color: white;
+            font-size: 18px;
+            padding: 50px 10px 20px 25px;
+        }
+    }
+}
+
+.bagrImg {
+    position: relative;
+    background-image: url(https://templatemo.com/templates/templatemo_557_grad_school/assets/images/choosing-bg.jpg);
+    width: 100%;
+    position: relative;
+    top: -200px;
+}
+
+.myh2 {
+    width: 300px;
+    margin: 70px auto;
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+
+    h2 {
+        border: 1px solid #2E394C;
+        margin-top: 70px;
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.tabsLi {
+    width: 100%;
+
+    ul {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.activLi {
+    color: #f5a425;
+}
+
+.tabsBtn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .tabsDiv {
+        margin-top: 10px;
+        width: 22px;
+        height: 22px;
+
+        div {
+            width: 14px;
+            height: 14px;
+            background: white;
+            margin: 4px;
+        }
+    }
+}
+
+.tabsBtn {
+    .activeDiv {
+        border: 2px solid #f5a425;
+        color: #f5a425;
+
+        .active1 {
+            background: #f5a425;
+        }
+    }
+}
+
+.tabsImages {
+    position: relative;
+    margin: 50px 70px;
+
+    img {
+        position: absolute;
+    }
+}
+
+.activImg {
+    z-index: 10;
+}
+
+.tabsText {
+    width: 480px;
+    margin-left: 700px;
+    color: white;
+    text-align: left;
+
+    h4 {
+        width: 100%;
+        font-size: 32px;
+        font-weight: 700;
+        margin-top: 110px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 28px;
+        margin-top: 30px;
+    }
+}
+
+.activeText {
+    display: block;
+}
+
+.all {
+    display: none;
+    width: 480px;
+    margin-left: 300px;
+    color: white;
+    text-align: left;
+}
+
+.TimeBlock {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-top: 150px;
+    background-image: url(https://templatemo.com/templates/templatemo_557_grad_school/assets/images/coming-soon-bg.jpg);
+
+    .twoDivs {
+        width: 100%;
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+
+        .times {
+            width: 650px;
+            padding-top: 100px;
+
+            h4 {
+                font-size: 30px;
+                color: #fff;
+                font-weight: 800;
+                line-height: 40px;
+
+                em {
+                    font-style: normal;
+                    color: #f5a425;
+                }
+            }
+        }
+
+        .counter {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+
+            .dates {
+                width: 130px;
+                height: 150px;
+                background: rgba(250, 250, 250, 0.1);
+                text-align: center;
+
+                .value {
+                    padding: 15px 10px;
+                    font-size: 48px;
+                    font-weight: 800;
+                    color: white;
+                }
+
+                span {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: #f5a425;
+                    font-weight: 500;
+                }
+            }
+        }
+
+
+        .validation {
+            width: 400px;
+            background: rgba(250, 250, 250, 0.1);
+
+            h6 {
+                font-size: 14px;
+                color: #fff;
+                background-color: rgba(250, 250, 250, 0.2);
+                padding: 40px;
+                text-align: center;
+                line-height: 24px
+            }
+
+            .controlPanel {
+                margin: 40px 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .form-control {
+                    height: 35px;
+                    background: #525968;
+                    border: none;
+                    padding: 0 12px;
+                }
+            }
+
+            .btn {
+                width: 150px;
+                margin: 0 auto;
+                text-align: center;
+                padding-bottom: 30px;
+
+                button {
+                    padding: 15px 20px;
+                    background: #f5a425;
+                    border: none;
+                    color: white;
+                }
+            }
+
+
+        }
+    }
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+  height: 600px;
+    background-image: url(https://templatemo.com/templates/templatemo_557_grad_school/assets/images/choosing-bg.jpg);
+    .footerDivs {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+       .active{
+        display: block;
+       }
+       .activeNone{
+        display: none;
+       }
+        .bigItem {
+            width: 220px;
+            background: white;
+            img {
+                width: 100%;
+            }
+            .smallItem {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 15px;
+                text-align: left;
+                .author-image {
+                    width: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    img {
+                        width: 100%;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    color: grey;
+                }
+            }
+        }
+    }
+
+    .footerBtn {
+        position: absolute;
+        top: 450px;
+        left: 570px;
+
+        .footerBtnSpan {
+            width: 10px;
+            height: 10px;
+            margin-left: 7px;
+        }
+    }
+}
+
+.activeBtn {
+    background: #f5a425;
+    border: none;
+}
+
+.lastPart {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 100px;
+    background-image: url(https://templatemo.com/templates/templatemo_557_grad_school/assets/images/video-bg.jpg);
+
+    .leftContent {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 30px;
+        color: white;
+
+        h4 {
+            font-size: 35px;
+            letter-spacing: 0.5px;
+            line-height: 40px;
+
+            em {
+                font-style: normal;
+                color: #f5a425;
+            }
+        }
+    }
+
+    .main-button {
+        width: 150PX;
+
+        button {
+            background: #f5a425;
+            padding: 15px 15px;
+            border: none;
+            color: white;
+        }
+    }
+}
+
+.myh3 {
+    width: 100%;
+    background-image: url(https://templatemo.com/templates/templatemo_557_grad_school/assets/images/contact-bg.jpg);
+    width: 300px;
+    margin: 50px auto;
+
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+    h3 {
+        border: 1px solid #2E394C;
+        margin-top: 70px;
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+.end{
+    display: flex;
+    justify-content:space-evenly;
+    padding-bottom: 70px;
+    .lastValidaton{
+        background:#2E394C;
+        width: 500px;
+       padding: 40px 20px 5px 20px;
+        .myInput{
+            fieldset{
+                width: 100%;  
+                border: none;
+            }
+            .oneInput{
+                input{
+                    width: 450px;
+                    height: 200px;
+                    margin: 20px 20px;
+                    background: #525968;
+                    border: none;
+                }
+            }
+            .lastInput{
+                display: flex;
+                justify-content: space-evenly;
+              input{
+                width: 215px;
+                height: 40px;
+                background: #525968;
+                border: none;
+              }
+            }
+        }
+    .validButton{
+        width: 270px;
+        padding-left: 20px;
+        button{
+            background: #f5a425;
+            color: white;
+            padding: 15px 10px;
+            border: none;
+        }
+    }
+    }   
+}
+.FooterEnd{
+    width: 100%;
+    border-top: 1px solid white;
+  div{
+    padding: 20px 10px;
+    color: white;
+    text-align: center;
+  }
+}
+.all{
+    transform:translateX(-270px);
+}
